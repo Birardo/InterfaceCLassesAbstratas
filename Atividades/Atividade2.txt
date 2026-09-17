@@ -1,0 +1,11 @@
+//Atividade 2
+
+
+            Arma espada = new Espada();
+            Arma arco = new Arco();
+            espada.Nome = "Espadão";
+            espada.DanoBase = 10;
+            espada.ExibirInfo();
+            arco.Nome = "Arcão";
+            arco.DanoBase = 8;
+            arco.ExibirInfo();
