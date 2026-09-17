@@ -1,0 +1,20 @@
+//Atividade 4
+
+            CampoFormulario ct = new CampoTexto();
+            ct.Valor = "Ab";
+            CampoFormulario ct2 = new CampoTexto();
+            ct2.Valor = "";
+            CampoFormulario cn = new CampoNumerico();
+            cn.Valor = "abbc";
+            List<IValidavel> lista = new List<IValidavel> { (IValidavel)ct, (IValidavel)ct2, (IValidavel)cn }; // (IValidavel) está convertendo as variáveis de tipos diferentes
+            foreach (IValidavel validavel in lista)
+            {
+                validavel.Validar();
+                if (validavel.Validar() == true)
+                {
+                    Console.WriteLine("O campo é verdadeiro");
+                }
+                else {
+                    Console.WriteLine("O Campo é falso");
+                }
+            }
