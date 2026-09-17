@@ -1,0 +1,9 @@
+//Atividade 3
+
+
+            Drone drone = new Drone();
+            ICamera camera = new Drone();
+            camera.TirarFoto();
+            IVoavel helice = new Drone();
+            helice.Decolar();
+            helice.Pousar();
